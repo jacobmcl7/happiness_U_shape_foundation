@@ -7,6 +7,9 @@
 # 2. Backward induction for a time-dependent version of the same problem (with finite horizon)
 #################################
 
+import numpy as np
+from scipy.interpolate import interp1d
+import matplotlib.pyplot as plt
 
 
 #################################
@@ -17,10 +20,6 @@
 
 # VFI for the following problem: max sum beta^t h(K_t,I_t) s.t. LoM K_{t+1} = f(K_t,I_t)
 # Then simulates from K0 and plots K_t, I_t, h_t to show U-shape.
-
-import numpy as np
-from scipy.interpolate import interp1d
-import matplotlib.pyplot as plt
 
 # Parameters
 A = 1.0  # efficiency parameter
