@@ -119,7 +119,7 @@ policy_fun = interp1d(K_grid, policy_I, kind='linear', fill_value=(Imin, Imax), 
 # we have now solved the problem generally, so we can simulate the model from a given initial capital level K0 to get the dynamics
 
 #### HERE IS WHERE WE SET INITIAL STOCK SIZE ####
-K0 = 1.5  # note this must be in [Kmin, Kmax]
+K0 = 8  # note this must be in [Kmin, Kmax]
 #### ####
 Tsim = 80   # number of periods to simulate
 Ks = np.empty(Tsim+1)   # these three are to store the values at time s
